@@ -10,14 +10,14 @@
 
 `-Server` имя сервера VBR, по умолчанию **localhost** \
 `-port` порт, по умолчанию **9419** \
-`-Reset` сброс учетных данных для подключения \
-`-Statistic` отображает статус состояния работы резервного копирования конфигурации сервера VBR, кол-во точек восстановления и время последней копии \
-`-Jobs` подробная статистика по всех настроенным заданиям резеврного окпирования \
-Veeam-REStat srv-veeam-11 -ConfigBackup   # configuration backup
-Veeam-REStat srv-veeam-11 -Repositories   # repositories statistic
-Veeam-REStat srv-veeam-11 -Service        # services list
-Veeam-REStat srv-veeam-11 -Hosts          # physical added hosts to backup infrastructure 
-Veeam-REStat srv-veeam-11 -Proxy          # proxy server list
-Veeam-REStat srv-veeam-11 -Users          # users list
-Veeam-REStat srv-veeam-11 -Backup         # backup type, count points restore and path
-Veeam-REStat srv-veeam-11 -Points         # all restore points
+`-Reset` сброс учетных данных для подключения к серверу VBR \
+`-Statistic` статистика всех заданий с сортировкой по дате. Выводит время начала, завершения и статус работы, процент прогресса, результат выполнений (**Result**) и сообщение с причиной в случае ошибки (**Warning/Failed**). \
+`-Jobs` подробная статистика по всем настроенным заданиям резеврного копирования: статус работы (**In Active/disabled**), результат последнего задания (**LastResult**), тип аутентификации, имя и размер виртуальной машины, тип резервного копирования, дату и время последнего и следущего выполнения) \
+`-ConfigBackup` отображает статус состояния работы резервного копирования конфигурации сервера VBR, кол-во точек восстановления и время последней копии \
+`-Repositories` статистика по инвентарным данным репозиториев \
+`-Service`        # services list
+`-Hosts`          # physical added hosts to backup infrastructure 
+`-Proxy`          # proxy server list
+`-Users`          # users list
+`-Backup`         # backup type, count points restore and path
+`-Points`         # all restore points
