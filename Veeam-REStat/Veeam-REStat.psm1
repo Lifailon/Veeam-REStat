@@ -60,7 +60,11 @@ $AllProtocols = [System.Net.SecurityProtocolType]'Ssl3,Tls,Tls11,Tls12'
 [System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
 }
 ### Cred
-$CredFile = ".\$server.xml"
+$path = ($env:PSModulePath.Split(";")[0])+"\Veeam-REStat\Creds"
+if (!(Test-Path $path)) {
+New-Item $path -ItemType Directory -Force | Out-Null
+}
+$CredFile = "$path\$server.xml"
 if ($Reset) {
 rm $CredFile -ErrorAction Ignore
 }
