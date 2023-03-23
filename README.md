@@ -31,3 +31,9 @@
 ✅ `-Service` выводит информацию о связанных внутренних службах, подключение к этим службам может потребоваться только для интеграции с VBR.
 
 ## 🎉 Примеры
+
+![Image alt](https://github.com/Lifailon/Veeam-REStat/blob/rsa/Screen/Example-1.jpg)
+
+![Image alt](https://github.com/Lifailon/Veeam-REStat/blob/rsa/Screen/Example-2.jpg)
+
+![Image alt](https://github.com/Lifailon/Veeam-REStat/blob/rsa/Screen/Example-3.jpg)
