@@ -2,7 +2,7 @@ function Veeam-REStat {
 <#
 .SYNOPSIS
 Module for get Veeam BR statistic by using REST API (Invoke-WebRequest)
-Tested on PowerShell verison 5.1 and 7.3
+Tested on PowerShell verison 5.1 and 7.3 for Veeam Backup & Replication 11 using Swagger api-version 1.0-rev2
 .DESCRIPTION
 Example:
 Veeam-REStat -Server localhost -Port 9419 # param default
